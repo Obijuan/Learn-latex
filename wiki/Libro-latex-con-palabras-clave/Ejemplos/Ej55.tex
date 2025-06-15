@@ -1,0 +1,30 @@
+\documentclass[x11names,table]{article}
+
+% Preámbulo estándard
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\begin{document}
+
+% -------- Tabla
+
+%-- Color de las filas
+%--    Comienzo-Color filas pares-Color filas impares
+\rowcolors{1}{blue!2}{green!20}
+\begin{tabular}{ccc}
+  %-- lcr: alineacion de cada columna
+  %--  l: left, c: center, r: right
+  %\hline
+  %-- Color de la primera fila
+  \rowcolor{red!17} {\bf Item 1} & {\bf Item 2} & {\bf Item 3} \\ \hline
+  Elemento 11 & Elemento 12 & Elemento 13 \\ \hline
+  Elemento 21 & Elemento 22 & Elemento 23 \\ \hline
+  Elemento 31 & Elemento 32 & Elemento 33 \\ \hline
+  Elemento 41 & Elemento 42 & Elemento 43 \\ \hline
+  Elemento 51 &\cellcolor{black!15} Elemento 52 & Elemento 53 \\ \hline
+\end{tabular}
+
+\end{document}
